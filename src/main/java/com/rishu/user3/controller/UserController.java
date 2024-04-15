@@ -5,14 +5,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/user1")
+@RequestMapping("/user")
 public class UserController {
 	
 	
-	@GetMapping("/")
+	@GetMapping("/user3")
 	public String getData()
 	{
 		return "Hello Rishu";
+	}
+	@GetMapping("/")
+	public String getData1()
+	{
+		return "Healthy";
 	}
 
 }
